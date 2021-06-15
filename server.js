@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const searchResultParser = require('./search_result_parser');
 const app = express();
-const port = 3333;
+const port = 3000;
 
 app.get('/search', (endpointRequest, endpointResponse) => {
     let searchTerm = endpointRequest.query.term;
